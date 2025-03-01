@@ -77,7 +77,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-purple-600 to-indigo-900 py-6 px-4">
       <Link
         className="inline-flex mb-6 items-center text-white bg-indigo-600 hover:bg-indigo-700 px-3 py-2 rounded-md text-sm transition-all"
-        to="/Quran_Compition/routinPage"
+        to="/CRF/routinPage"
       >
         <FaArrowRight className="ml-1" />
         العودة إلى الصفحة الرئيسية

@@ -39,7 +39,7 @@ const Standing = () => {
     <div className="min-h-screen bg-gradient-to-b from-purple-600 to-indigo-900 flex flex-col items-center justify-center p-4">
       <Link
         className="inline-flex mb-1.5 items-center text-white bg-indigo-600 hover:bg-indigo-700 px-3 py-2 rounded-md text-sm transition-all"
-        to={"/Quran_Compition/routinPage"}
+        to={"/CRF/routinPage"}
       >
         العودة إلى الصفحة الرئيسية
       </Link>

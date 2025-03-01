@@ -85,7 +85,7 @@ const Question = () => {
       });
       console.log("تم حفظ الإجابة بنجاح في Firestore");
       console.log(dataOfQuetion);
-      navigate("/Quran_Compition/standing");
+      navigate("/CRF/standing");
     } catch (error) {
       console.error("خطأ في حفظ الإجابة:", error);
     }
@@ -98,7 +98,7 @@ const Question = () => {
           <div className="container mx-auto max-w-4xl">
             <Link
               className="inline-flex mb-1.5 items-center text-white bg-indigo-600 hover:bg-indigo-700 px-3 py-2 rounded-md text-sm transition-all"
-              to={"/Quran_Compition/routinPage"}
+              to={"/CRF/routinPage"}
             >
               العودة إلى الصفحة الرئيسية
             </Link>

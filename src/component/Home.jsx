@@ -275,7 +275,7 @@ const Home = () => {
               });
              
         console.log("تم حفظ البيانات وتحديث النقاط بنجاح في Firestore");
-        navigate("/Quran_Compition/standing");
+        navigate("/CRF/standing");
       } else {
         setLastRecord(modifyData.lastRecord)
         console.log("last",totalPoints, lastRecord,newPoints)
@@ -289,7 +289,7 @@ const Home = () => {
           lastRecord:newPoints
         });
         console.log("تم العثور على البيانات بالفعل، لن يتم الإضافة");
-        navigate("/Quran_Compition/standing");
+        navigate("/CRF/standing");
       }
     }
      catch (error) {
@@ -319,7 +319,7 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-b from-purple-600 to-indigo-900 py-6 px-4">
      <Link
             className="inline-flex mb-1.5 items-center text-white bg-indigo-600 hover:bg-indigo-700 px-3 py-2 rounded-md text-sm transition-all"
-            to={"/Quran_Compition/routinPage"}
+            to={"/CRF/routinPage"}
           >
            العودة إلى الصفحة الرئيسية
           </Link>
@@ -335,7 +335,7 @@ const Home = () => {
         <div className="space-y-8" dir="rtl">
           <div>
             <Link
-              to={"/Quran_Compition/instructions"}
+              to={"/CRF/instructions"}
               className="col-span-2 text-center bg-gradient-to-b from-purple-600 to-indigo-900 hover:from-purple-700 hover:to-indigo-800 text-white py-3 px-2 rounded-md font-bold text-lg flex items-center justify-center"
             >
               <FaInfoCircle className="ml-2" />

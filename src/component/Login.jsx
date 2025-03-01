@@ -32,7 +32,7 @@ const Login = () => {
     if (user) {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
       localStorage.setItem("totalPoints", 0);
-      navigate("/Quran_Compition/routinPage");
+      navigate("/CRF/routinPage");
     } else {
       setError("إيميل أو كلمة مرور غير صحيحة");
     }
@@ -79,7 +79,7 @@ const Login = () => {
             تسجيل الدخول
           </button>
           <Link
-            to="/Quran_Compition/signup"
+            to="/CRF/signup"
             className="text-indigo-500 hover:underline text-lg text-center block"
           >
             التسجيل بحساب جديد

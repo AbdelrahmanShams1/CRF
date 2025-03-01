@@ -19,16 +19,16 @@ const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
-        <Route path="Quran_Compition/login" element={<Login />} />
-        <Route path="Quran_Compition/signup" element={<SignUp />} />
-        <Route path="Quran_Compition/home" element={<Home />} />
-        <Route path="Quran_Compition/instructions" element={<Instructions />} />
-        <Route path="Quran_Compition" element={<Welcome />} />
-        <Route path="Quran_Compition/standing" element={<Standing />} />
-        <Route path="Quran_Compition/dayly-question" element={<Question />} />
-        <Route path="Quran_Compition/routinPage" element={<RoutingPage />} />
-        <Route path="Quran_Compition/activity" element={<Activity />} />
-        <Route path="Quran_Compition/azkar" element={<Azkar />} />
+        <Route path="CRF/login" element={<Login />} />
+        <Route path="CRF/signup" element={<SignUp />} />
+        <Route path="CRF/home" element={<Home />} />
+        <Route path="CRF/instructions" element={<Instructions />} />
+        <Route path="CRF" element={<Welcome />} />
+        <Route path="CRF/standing" element={<Standing />} />
+        <Route path="CRF/dayly-question" element={<Question />} />
+        <Route path="CRF/routinPage" element={<RoutingPage />} />
+        <Route path="CRF/activity" element={<Activity />} />
+        <Route path="CRF/azkar" element={<Azkar />} />
       </>
     )
   );

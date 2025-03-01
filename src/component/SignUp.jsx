@@ -42,7 +42,7 @@ const SignUp = () => {
       setLoading(true);
       await setDoc(userRef, newUser);
       alert("تم التسجيل بنجاح! يمكنك الآن تسجيل الدخول.");
-      navigate("/Quran_Compition/login");
+      navigate("/CRF/login");
     } catch (error) {
       console.error("Error saving user to Firestore:", error.message);
       setError({

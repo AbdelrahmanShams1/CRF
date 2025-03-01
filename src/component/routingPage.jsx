@@ -18,7 +18,7 @@ const RoutingPage = () => {
   const handleLogout = () => {
     localStorage.removeItem("loggedInUser");
     setName("");
-    navigate("/Quran_Compition/login"); // توجيه المستخدم إلى الصفحة الرئيسية بعد تسجيل الخروج
+    navigate("/CRF/login"); // توجيه المستخدم إلى الصفحة الرئيسية بعد تسجيل الخروج
   };
 
   console.log(name);
@@ -54,7 +54,7 @@ const RoutingPage = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
         <Link
           className="px-6 py-4 text-lg bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 transition transform hover:scale-105 flex items-center justify-center"
-          to={"/Quran_Compition/activity"}
+          to={"/CRF/activity"}
         >
           <span className="ml-2">🔍</span>
           معرفة نشاطاتي
@@ -62,7 +62,7 @@ const RoutingPage = () => {
 
         <Link
           className="px-6 py-4 text-lg bg-green-600 text-white rounded-xl shadow-lg hover:bg-green-700 transition transform hover:scale-105 flex items-center justify-center"
-          to={"/Quran_Compition/home"}
+          to={"/CRF/home"}
         >
           <span className="ml-2">📝</span>
           إدخال أنشطة اليوم
@@ -70,7 +70,7 @@ const RoutingPage = () => {
 
         <Link
           className="px-6 py-4 text-lg bg-yellow-600 text-white rounded-xl shadow-lg hover:bg-yellow-700 transition transform hover:scale-105 flex items-center justify-center"
-          to={"/Quran_Compition/dayly-question"}
+          to={"/CRF/dayly-question"}
         >
           <span className="ml-2">❓</span>
           السؤال اليومي
@@ -78,7 +78,7 @@ const RoutingPage = () => {
 
         <Link
           className="px-6 py-4 text-lg bg-purple-600 text-white rounded-xl shadow-lg hover:bg-purple-700 transition transform hover:scale-105 flex items-center justify-center"
-          to={"/Quran_Compition/standing"}
+          to={"/CRF/standing"}
         >
           <span className="ml-2">🏆</span>
           الترتيب
@@ -86,7 +86,7 @@ const RoutingPage = () => {
 
         <Link
           className="px-6 py-4 text-lg bg-orange-600 text-white rounded-xl shadow-lg hover:bg-orange-700 transition transform hover:scale-105 flex items-center justify-center"
-          to={"/Quran_Compition/instructions"}
+          to={"/CRF/instructions"}
         >
           <span className="ml-2">📜</span>
           التعليمات
@@ -94,7 +94,7 @@ const RoutingPage = () => {
 
         <Link
           className="px-6 py-4 text-lg bg-teal-600 text-white rounded-xl shadow-lg hover:bg-teal-700 transition transform hover:scale-105 flex items-center justify-center"
-          to={"/Quran_Compition/azkar"}
+          to={"/CRF/azkar"}
         >
           <span className="ml-2">🕌</span>
           الأذكار
