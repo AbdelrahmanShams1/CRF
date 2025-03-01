@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'arabic-font';
+  src: url('../public/alfont_com_TheYearofHandicrafts-Regular.otf');
+}
+
+html {
+    direction: rtl;
+    font-family: 'arabic-font', sans-serif; /* Optional */
+  }
