@@ -145,55 +145,55 @@ const Home = () => {
     const data = {
         date: todayDate,
         fajr: {
-            type: fajrRef.current.value == 1000 ? "في المسجد"
-                : fajrRef.current.value == 900 && userGender == "female" ? "عذر قهري "
-                : fajrRef.current.value == 900 ? "في الوقت"
-                : fajrRef.current.value == 700 ? "حاضر"
-                : fajrRef.current.value == 300 ? "تأخير "
-                : fajrRef.current.value == 100 ? "قضاء " : "لم يحدد",
-            azkar: fajrAzkarRef.current.checked,
-            points: +fajrRef.current.value + (fajrAzkarRef.current.checked ? 50 : 0),
-        },
-        dhuhr: {
-            type: dhuhrRef.current.value == 1000 ? "في المسجد"
-                : dhuhrRef.current.value == 900 && userGender == "female" ? "عذر قهري "
-                : dhuhrRef.current.value == 900 ? "في الوقت"
-                : dhuhrRef.current.value == 700 ? "حاضر"
-                : dhuhrRef.current.value == 300 ? "تأخير "
-                : dhuhrRef.current.value == 100 ? "قضاء " : "لم يحدد",
-            azkar: dhuhrAzkarRef.current.checked,
-            points: +dhuhrRef.current.value + (dhuhrAzkarRef.current.checked ? 50 : 0),
-        },
-        asr: {
-            type: asrRef.current.value == 1000 ? "في المسجد"
-                : asrRef.current.value == 900 && userGender == "female" ? "عذر قهري "
-                : asrRef.current.value == 900 ? "في الوقت"
-                : asrRef.current.value == 700 ? "حاضر"
-                : asrRef.current.value == 300 ? "تأخير "
-                : asrRef.current.value == 100 ? "قضاء " : "لم يحدد",
-            azkar: asrAzkarRef.current.checked,
-            points: +asrRef.current.value + (asrAzkarRef.current.checked ? 50 : 0),
-        },
-        maghrib: {
-            type: maghribRef.current.value == 1000 ? "في المسجد"
-                : maghribRef.current.value == 900 && userGender == "female" ? "عذر قهري "
-                : maghribRef.current.value == 900 ? "في الوقت"
-                : maghribRef.current.value == 700 ? "حاضر"
-                : maghribRef.current.value == 300 ? "تأخير "
-                : maghribRef.current.value == 100 ? "قضاء " : "لم يحدد",
-            azkar: maghribAzkarRef.current.checked,
-            points: +maghribRef.current.value + (maghribAzkarRef.current.checked ? 50 : 0),
-        },
-        isha: {
-            type: ishaRef.current.value == 1000 ? "في المسجد"
-                : ishaRef.current.value == 900 && userGender == "female" ? "عذر قهري "
-                : ishaRef.current.value == 900 ? "في الوقت"
-                : ishaRef.current.value == 700 ? "حاضر"
-                : ishaRef.current.value == 300 ? "تأخير "
-                : ishaRef.current.value == 100 ? "قضاء " : "لم يحدد",
-            azkar: ishaAzkarRef.current.checked,
-            points: +ishaRef.current.value + (ishaAzkarRef.current.checked ? 50 : 0),
-        },
+          type: fajrRef.current.value == 1000 ? "في المسجد"
+              : fajrRef.current.value == 900 && userGender == "female" ? "عذر قهري "
+              : fajrRef.current.value == 910 ? "في الوقت"
+              : fajrRef.current.value == 700 ? "حاضر"
+              : fajrRef.current.value == 300 ? "تأخير "
+              : fajrRef.current.value == 100 ? "قضاء " : "لم يحدد",
+          azkar: fajrAzkarRef.current.checked,
+          points: +fajrRef.current.value + (fajrAzkarRef.current.checked ? 50 : 0),
+      },
+      dhuhr: {
+          type: dhuhrRef.current.value == 1000 ? "في المسجد"
+              : dhuhrRef.current.value == 900 && userGender == "female" ? "عذر قهري "
+              : dhuhrRef.current.value == 910 ? "في الوقت"
+              : dhuhrRef.current.value == 700 ? "حاضر"
+              : dhuhrRef.current.value == 300 ? "تأخير "
+              : dhuhrRef.current.value == 100 ? "قضاء " : "لم يحدد",
+          azkar: dhuhrAzkarRef.current.checked,
+          points: +dhuhrRef.current.value + (dhuhrAzkarRef.current.checked ? 50 : 0),
+      },
+      asr: {
+          type: asrRef.current.value == 1000 ? "في المسجد"
+              : asrRef.current.value == 900 && userGender == "female" ? "عذر قهري "
+              : asrRef.current.value == 910 ? "في الوقت"
+              : asrRef.current.value == 700 ? "حاضر"
+              : asrRef.current.value == 300 ? "تأخير "
+              : asrRef.current.value == 100 ? "قضاء " : "لم يحدد",
+          azkar: asrAzkarRef.current.checked,
+          points: +asrRef.current.value + (asrAzkarRef.current.checked ? 50 : 0),
+      },
+      maghrib: {
+          type: maghribRef.current.value == 1000 ? "في المسجد"
+              : maghribRef.current.value == 900 && userGender == "female" ? "عذر قهري "
+              : maghribRef.current.value == 910 ? "في الوقت"
+              : maghribRef.current.value == 700 ? "حاضر"
+              : maghribRef.current.value == 300 ? "تأخير "
+              : maghribRef.current.value == 100 ? "قضاء " : "لم يحدد",
+          azkar: maghribAzkarRef.current.checked,
+          points: +maghribRef.current.value + (maghribAzkarRef.current.checked ? 50 : 0),
+      },
+      isha: {
+          type: ishaRef.current.value == 1000 ? "في المسجد"
+              : ishaRef.current.value == 900 && userGender == "female" ? "عذر قهري "
+              : ishaRef.current.value == 910 ? "في الوقت"
+              : ishaRef.current.value == 700 ? "حاضر"
+              : ishaRef.current.value == 300 ? "تأخير "
+              : ishaRef.current.value == 100 ? "قضاء " : "لم يحدد",
+          azkar: ishaAzkarRef.current.checked,
+          points: +ishaRef.current.value + (ishaAzkarRef.current.checked ? 50 : 0),
+      },
         quran: {
             numOfPages: +quranRef.current.value,
             points: +quranRef.current.value * 30,
