@@ -138,8 +138,10 @@ const Home = () => {
   }, []);
 
   async function handleSaveData() {
-    let dateActiv = new Date();
-    let formattedDate = new Intl.DateTimeFormat("en-CA").format(dateActiv);
+      let dateActiv = new Date();
+     // let dateActiv = "2025-03-03";
+       let formattedDate = new Intl.DateTimeFormat("en-CA").format(dateActiv);
+       // let formattedDate = dateActiv;
     const todayDate = new Date();
 
     const data = {
@@ -384,9 +386,8 @@ const Home = () => {
                           ref={prayer.salahRef}
                           className="w-full px-4 py-2 border border-gray-300 rounded-md"
                         >
-                           
-                          <option value={0}>لم يتم الصلاه (0 نقطة)</option>
-                          <option value={900}>في الوقت (900 نقطة)</option>
+                        <option value={0}>لم يتم الصلاه (0 نقطة)</option>
+                          <option value={910}>في الوقت (910 نقطة)</option>
                           <option value={300}>متأخر (300 نقطة)</option>
                           <option value={100}>قضاء (100 نقطة)</option>
                           <option value={900}>عذر قهري (900 نقطة)</option>
