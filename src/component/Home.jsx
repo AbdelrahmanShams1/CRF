@@ -371,7 +371,7 @@ const Home = () => {
                           ref={prayer.salahRef}
                           className="w-full px-4 py-2 border border-gray-300 rounded-md"
                         >
-                           <option value={0}>لم يتم الصلاه (0 نقطة)</option>
+                          <option value={0}>لم يتم الصلاه (0 نقطة)</option>
                           <option value={1000}>
                             جماعة في المسجد (1000 نقطة)
                           </option>
